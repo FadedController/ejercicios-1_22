@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo 19</title>
+    <script>
+      function pulsa() {
+        alert("Autor:Fulanito de tal...");
+      }
+      function foco() {
+        alert("Foco en la primera Caja");
+      }
+      function tecla() {
+        alert("Pulsada tecla");
+      }
+    </script>
+  </head>
+  <body>
+    <input type="button" value="Autor" onClick="pulsa();" />
+    <input type="text" size="5" onFocus="foco();" />
+    <input type="text" size="5" onKeyPress="tecla();" />
+    <div>
+      <a href="/">Regresar al menú</a>
+    </div>
+  </body>
+</html>

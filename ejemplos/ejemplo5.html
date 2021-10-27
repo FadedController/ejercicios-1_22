@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Ejemplo 5</title>
+    <script>
+      function muestra() {
+        var nombre = document.getElementById("cnombre").value;
+        alert("Eres " + nombre);
+        cnombre.value = "";
+        cnombre.focus();
+      }
+    </script>
+  </head>
+  <body>
+    Nombre:<input type="text" id="cnombre" size="20" />
+    <input type="button" value="Ver" onClick="muestra();" />
+    <div>
+      <a href="/">Regresar al menú</a>
+    </div>
+  </body>
+</html>

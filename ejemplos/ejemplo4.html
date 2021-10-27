@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo 4</title>
+  </head>
+  <body onload="inicio()">
+    <a href="/">Regresar al menú</a>
+  </body>
+  <script>
+    const inicio = () => {
+      const nombre = prompt("Cuál es tu nombre?").trim();
+      const edad = prompt("Cuál es tu edad").trim();
+      alert(`Hola ${nombre}, tu edad (${edad}) es perfecta`);
+    };
+  </script>
+</html>

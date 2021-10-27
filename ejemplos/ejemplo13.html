@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo 13</title>
+  </head>
+  <body>
+    <h3>Números pares entre 1 y 100...</h3>
+    <div id="r"></div>
+    <h3>...Hecho</h3>
+    <a href="/">Regresar al menú</a>
+    <script>
+      new Array(101).fill(0).map((_,i)=>(i%2==0?i:0)).filter(n=>n!=0).forEach(e=>document.getElementById("r").innerHTML=e%10==2&&e>10?document.getElementById("r").innerHTML+"<br />"+e:document.getElementById("r").innerHTML+" "+e);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo 17</title>
+    <script>
+      function opt(v) {
+        let cadena;
+        switch (v) {
+          case 1:
+            cadena = "uno";
+            break;
+          case 2:
+            cadena = "dos";
+            break;
+          case 3:
+            cadena = "tres";
+            break;
+          case 4:
+            cadena = "cuatro";
+            break;
+        }
+        alert("Vinculo " + cadena);
+      }
+    </script>
+  </head>
+  <body>
+    <a href="ejemplo1.html" onmouseover="opt(1)">Ir a uno</a>
+    <a href="ejemplo2.html" onmouseover="opt(2)">Ir a dos</a>
+    <a href="ejemplo3.html" onmouseover="opt(3)">Ir a tres</a>
+    <a href="ejemplo4.html" onmouseover="opt(4)">Ir a cuatro</a>
+    <a href="/">Regresar al menú</a>
+  </body>
+</html>

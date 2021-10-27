@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <script>
+      function ver() {
+        var edad = parseInt(document.getElementsByName("cedad")[0].value);
+        if (edad <= 18) alert("Eres un adolescente...casi joven...");
+        else {
+          if (edad >= 65) alert("Eres un adulto de la 3a edad");
+          else alert("Eres un adulto, joven o maduro");
+        }
+      }
+    </script>
+    <title>Ejemplo 7</title>
+  </head>
+  <body>
+    Edad:
+    <input type="text" name="cedad" size="3" onBlur="ver();" />
+    <div>
+      <a href="/">Regresar al menú</a>
+    </div>
+  </body>
+</html>

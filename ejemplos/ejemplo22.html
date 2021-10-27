@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <script>
+      function pasa() {
+        var temporal;
+        temporal = document.getElementById("secret").value;
+        document.getElementById("caja").value = temporal;
+      }
+    </script>
+  </head>
+  <body>
+    CONTRASEÑA:
+    <input type="password" id="secret" size="5" onKeyUp="pasa();" />
+    <br />
+    NORMAL:
+    <input type="text" id="caja" size="5" />
+  </body>
+</html>

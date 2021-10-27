@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo 8</title>
+    <script>
+      function espe() {
+        var cespe = document.getElementsByName("cespe")[0];
+        var tipo = cespe.value;
+        switch (tipo) {
+          case "humano":
+            alert("Eres un Humano");
+            break;
+          case "planta":
+            alert("Eres un Vegetal");
+            break;
+          case "animal":
+            alert("Eres un Animal");
+            break;
+          default:
+            alert("Especie desconocida");
+            break;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    ESPECIE:
+    <input type="text" name="cespe" size="20" onBlur="espe()" />
+    <a href="/">Regresar al menú</a>
+  </body>
+</html>
