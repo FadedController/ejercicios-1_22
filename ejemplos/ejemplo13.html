@@ -11,9 +11,19 @@
     <h3>Números pares entre 1 y 100...</h3>
     <div id="r"></div>
     <h3>...Hecho</h3>
-    <a href="/">Regresar al menú</a>
+    <a href="../index.html">Regresar al menú</a>
     <script>
-      new Array(101).fill(0).map((_,i)=>(i%2==0?i:0)).filter(n=>n!=0).forEach(e=>document.getElementById("r").innerHTML=e%10==2&&e>10?document.getElementById("r").innerHTML+"<br />"+e:document.getElementById("r").innerHTML+" "+e);
+      new Array(101)
+        .fill(0)
+        .map((_, i) => (i % 2 == 0 ? i : 0))
+        .filter((n) => n != 0)
+        .forEach(
+          (e) =>
+            (document.getElementById("r").innerHTML =
+              e % 10 == 2 && e > 10
+                ? document.getElementById("r").innerHTML + "<br />" + e
+                : document.getElementById("r").innerHTML + " " + e)
+        );
     </script>
   </body>
 </html>
